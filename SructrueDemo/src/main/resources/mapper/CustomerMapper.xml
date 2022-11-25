@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- mapper标签要指定namespace属性，不然会报错，可看做包名-->
+<mapper namespace="mapper.CustomerMapper">
+
+
+
+    <select id="findUserById" parameterType="int" resultType="entity.Customer">
+        select * 
+        from customer 
+        where customer_id = #{customer_id}
+    </select>
+    
+    
+    
+    <insert id="insertUser" parameterType="entity.Customer">
+		insert into customer (customer_id,customer_password,customer_name,customer_type,customer_money)
+		values(#{customer_id},#{customer_password},#{customer_name},#{customer_type},#{customer_money})
+	</insert>
+    
+    
+    
+    
+    <delete id="deleteUserById" parameterType="int">
+        delete from user 
+        where customer_id = #{id}
+    </delete>
+    
+    
+    
+    
+    <update id="updateUser" parameterType="entity.Customer">
+        update user set 
+        	customer_password = #{customer_password} 
+        where 
+        	customer_id = #{customer_id}
+    </update>
+    
+    
+    
+    
+</mapper>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="utf-8"></meta>
+    <title>注册测试</title>
+    <head>    
+        <h2>用户测试</h2>
+    </head>
+    <body>
+        <h2>新規登録</h2>
+        <form action="../registerText" method="post">
+            <ul>
+                <li>顾客身份<br>
+                    <input type="radio" name="customer_type" value="法人"> 法人
+                    <input type="radio" name="customer_type" value="个人"> 个人
+                </li>
+                <li>
+                    <label form="number">お客様ID</label>
+                    <input type="number" name="customer_id"/>
+                </li>
+                <li>
+                    <label form="number ">暗証番号</label>
+                    <input type="number" name="customer_password"/>
+                </li>
+                <li>
+                    <label form="text ">姓名</label>
+                    <input type="text" name="customer_name"/>
+                </li>
+                <li>
+                    <label form="text ">地址</label>
+                    <input type="text" name="customer_address"/>
+                </li>
+                <li class="button">
+                    <button type="submit">提交信息</button>
+                </li>
+            </ul>
+        </form>
+

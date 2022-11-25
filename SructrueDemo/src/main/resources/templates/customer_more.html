@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="uft-8"></meta>
+    <head>
+        <title>完善个人信息</title>
+    </head>
+
+<!--接受后端发送的代码-->
+    <body>
+
+        <p  th:text="'尊敬的'+${customerType}+'用户'+${customerName}+'您好'"></p>
+        <p  th:text="'您的ID是'+${customerId}"></p>
+        <p  th:text="'您的密码是'+${customerPassword}"></p>
+        <p  th:text="'您的地址是'+${customerAddress}"></p>
+        <a href="customer_enter.html">返回用户测试</a>
+    </body>
+
+</html>

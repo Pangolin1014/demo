@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="utf-8"></meta>
+    <title>登录测试</title>
+    <head>    
+        <h2>用户测试</h2>
+    </head>
+    <body>
+        <h2>新規登録</h2>
+        <form action="../register" method="post">
+            <ul>
+                <li>
+                    <label form="number">お客様ID</label>
+                    <input type="number" name="customer_id"/>
+                </li>
+                <li>
+                    <label form="number ">暗証番号</label>
+                    <input type="number" name="customer_password"/>
+                </li>
+                <li class="button">
+                    <button type="submit">提交信息</button>
+                </li>
+            </ul>
+        </form>
+
+        <h2>登录</h2>
+        <form action="/land" method="post">
+            <ul>
+                <li>
+                    <label form="number">お客様ID</label>
+                    <input type="number" name="customer_id"/>
+                </li>
+                <li>
+                    <label form="number ">暗証番号</label>
+                    <input type="number" name="customer_password"/>
+                </li>
+                <li class="button">
+                    <button type="submit">提交信息</button>
+                </li>
+            </ul>
+        </form>
+        <a href="customer_enter.html">返回用户测试</a>
+    </body>
+</html>
