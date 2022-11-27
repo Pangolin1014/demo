@@ -5,8 +5,18 @@
 
     </head>
     <body>
-    <p  th:text="${userId}"></p>
-    <p  th:text="${userPassword}"></p>
+      
+        <if th:text=${customervip}="1">
+            尊敬的VIP用户<p  th:text="${customerName}"></p>您好
+            <elseif th:text=${customervip}="0">
+                用户<p  th:text="${customerName}"></p>你好
+            </elseif> 
+        </if>
+
+<!---
+    <p  th:text="${customerName}"></p>
+    <p  th:text="${customervip}"></p>
+    -->
     <a href="User.html">返回用户测试</a>
     <a href="customer_more">完善个人信息</a>
 

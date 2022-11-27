@@ -17,8 +17,8 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
     
     
     <insert id="insertUser" parameterType="entity.Customer">
-		insert into customer (customer_id,customer_password,customer_name,customer_type,customer_money)
-		values(#{customer_id},#{customer_password},#{customer_name},#{customer_type},#{customer_money})
+		insert into customer (customer_id,customer_password,customer_name,customer_type,customer_money,vip)
+		values(#{customer_id},#{customer_password},#{customer_name},#{customer_type},#{customer_money},#{vip})
 	</insert>
     
     

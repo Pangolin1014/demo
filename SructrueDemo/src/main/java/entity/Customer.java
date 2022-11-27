@@ -7,22 +7,18 @@ public class Customer {
 	private String customer_name;//顾客姓名",
 	private String customer_type;//法人或是个人
 	private int customer_money;//注册资金
-	
-	
+	private int vip;//顾客身份
 	
 	
 	public Customer(int customer_id, int customer_password, String customer_name, String customer_type,
-			int customer_money) {
+			int customer_money, int vip) {
 		super();
 		this.customer_id = customer_id;
 		this.customer_password = customer_password;
 		this.customer_name = customer_name;
 		this.customer_type = customer_type;
 		this.customer_money = customer_money;
-		
-		
-		
-		
+		this.vip = vip;
 	}
 	public int getCustomer_id() {
 		return customer_id;
@@ -54,8 +50,12 @@ public class Customer {
 	public void setCustomer_money(int customer_money) {
 		this.customer_money = customer_money;
 	}
-	
-	
+	public int getVip() {
+		return vip;
+	}
+	public void setVip(int vip) {
+		this.vip = vip;
+	}
 	
 	
 	
